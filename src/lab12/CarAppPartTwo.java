@@ -18,6 +18,21 @@ public class CarAppPartTwo {
 	
 	public static void main(String[] args) {
 		
+		listCars();
+		System.out.println("\nSelect which car you would like to buy (enter car ID number):");
+		int userCarChoice = scnr.nextInt();
+		
+		showCarById(userCarChoice); 
+		System.out.println("Is this the car you would like to purchase?");
+		String userFinal = scnr.next();
+		
+		if (userFinal.equalsIgnoreCase("yes")) {
+			System.out.println("Thanks for your purchase!\n");
+			System.out.println("Remaining inventory: ");
+			buyCar(userCarChoice);
+			listCars();
+		}		
+		
 	}
 	
 	public static void listCars() {
