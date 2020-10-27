@@ -25,7 +25,7 @@ public class UsedCar extends Car {
 
 	@Override
 	public String toString() {
-		return super.toString() + " (Used) mileage: " + mileage + "";
+		return super.toString() + " (Used) mileage: " + mileage;
 	}
 
 
